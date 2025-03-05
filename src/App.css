@@ -1,0 +1,207 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.player-area {
+  background-color: #444;
+  padding: 15px;
+  border-bottom: 1px solid #555;
+  border: 2px solid #888; /* Added border */
+}
+
+.player-area.top {
+  border-bottom: 1px solid #555;
+}
+
+.player-area.bottom {
+  border-top: 1px solid #555;
+}
+
+.player-area.top-center {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%; /* Reduced width even more */
+  padding: 2px; /* Reduced padding even more */
+  text-align: center;
+  border: 2px solid #888;
+  background-color: #444;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.player-name {
+  font-size: 0.7em; /* Reduced font size even more */
+  margin-bottom: 2px; /* Reduced margin even more */
+  color: #ddd;
+}
+
+.card-area {
+  display: flex;
+  overflow-x: auto;
+  padding: 5px; /* Reduced padding even more */
+}
+
+.card {
+  min-width: 70px;
+  height: 90px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2em;
+  background-color: black;
+  color: #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.card.heart {
+  border: 2px solid red;
+  box-shadow: 0 0 5px red;
+}
+
+.card.diamond {
+  border: 2px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+
+.card.spade {
+  border: 2px solid green;
+  box-shadow: 0 0 5px green;
+}
+
+.card.club {
+  border: 2px solid gold;
+  box-shadow: 0 0 5px gold;
+}
+
+.card span {
+  font-size: 1.2em;
+}
+
+.card .number {
+  font-size: 2em;
+}
+
+.card.heart {
+  color: red;
+}
+
+.card.diamond {
+  color: blue;
+}
+
+.card.spade {
+  color: green;
+}
+
+.card.club {
+  color: gold;
+}
+
+.middle-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #888; /* Added border */
+}
+
+.discard-pile,
+.draw-pile {
+  background-color: #444;
+  color: #eee;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.discard-label {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.discard-content {
+  margin-top: 5px;
+}
+
+.empty-pile-text {
+  color: #888;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border: 2px solid #888; /* Added border */
+}
+
+.action-buttons button,
+.add-player-button,
+.discard-pile button,
+.middle-area div {
+  background-color: #555;
+  color: #eee;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover,
+.add-player-button:hover,
+.discard-pile button:hover,
+.middle-area div:hover {
+  background-color: #777;
+}
+
+.add-player-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.middle-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.middle-area > div {
+  margin: 0 10px; /* Add some spacing between the divs */
+}
+
+.section-label {
+  font-size: 0.8em;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.team-meld-area {
+  background-color: #444;
+  padding: 15px;
+  border-bottom: 1px solid #555;
+  border: 2px solid #888;
+}

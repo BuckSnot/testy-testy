@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    border: 1px solid gray;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.player-area {
+    flex: 1;
+    border: 1px solid red;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.player-area.top {
+    order: 1;
+}
+
+.player-area.bottom {
+    order: 3;
+}
+
+.card-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    width: 50px;
+    height: 70px;
+    border: 1px solid yellow;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.card span {
+    font-size: 0.8em;
+}
+
+.middle-area {
+    flex: 1;
+    border: 1px solid purple;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.discard-pile {
+    border: 1px dashed white;
+    padding: 10px;
+    text-align: center;
+}
+
+.discard-content {
+    margin-top: 10px;
+}
+
+.empty-pile-text {
+    color: gray;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.action-buttons button, .add-player-button, .discard-pile button, .middle-area div {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
